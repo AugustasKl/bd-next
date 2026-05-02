@@ -4,7 +4,19 @@
   html {
     --color-neutral-black: #000000;
     --color-neutral-white: #ffffff;
-    /* --color-neutral-whater: #942334; */
+
+    --color-text-gray-900: #111827;
+    --color-text-gray-600: #4b5563;
+    --color-text-gray-500: #6b7280;
+    --color-text-gray-400: #9ca3af;
+
+
+    /* custom colors */
+    --color-divider: #e5e7eb;
+    /* --color-dimmed-: #e5e7eb; */
+
+    --color-primary: #7c3aed;
+    --color-primary-light: #ede9fe;
 
     --font-weight-regular: 400;
     --font-weight-medium: 500;
@@ -22,7 +34,11 @@
   body {
     color: var(--color-neutral-black);
     background-color: var(--color-neutral-white);
-    font-family: var(--font-lato), sans-serif;
+    font-family: var(--font-inter), sans-serif;
+  }
+
+  p {
+    @apply body-text font-regular;
   }
 
   a {

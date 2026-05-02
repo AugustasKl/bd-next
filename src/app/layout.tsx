@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Lato } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./styles/index.css";
+import { Providers } from "./Providers";
 
-const lato = Lato({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-lato",
-  weight: ["100", "300", "400", "700", "900"],
+  variable: "--font-inter",
   display: "swap",
 });
 
@@ -20,8 +20,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={lato.className}>
-      <body>{children}</body>
+    <html lang="en" className={inter.className}>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
