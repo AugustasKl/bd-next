@@ -1,7 +1,7 @@
 import { usePathname } from "next/navigation";
 import { MobileHeader } from "./MobileHeader";
-import { SideMenu } from "./SideMenu";
 import { FC, useCallback, useEffect, useState } from "react";
+import { SideMenu } from "./SideMenu";
 
 export const MobileNav: FC = () => {
   const pathname = usePathname();

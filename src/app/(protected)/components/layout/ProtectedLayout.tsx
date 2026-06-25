@@ -3,8 +3,7 @@ import { FC, ReactNode } from "react";
 import { Sidebar } from "./sidebar";
 import { useBreakPoint } from "../../hooks";
 import { Breakpoint } from "@/app/styles";
-import { MobileNav } from "./MobileNav";
-
+import { MobileNav } from "./nav/MobileNav";
 
 interface Props {
   children: ReactNode;

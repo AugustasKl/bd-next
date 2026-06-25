@@ -1,7 +1,7 @@
 import { BurgerMenuIcon } from "@/icons";
 import React, { FC } from "react";
-import { BigDayLogoWithTitle } from "./BigDayLogoWithTitle";
-import { Avatar } from "../ui";
+import { BigDayLogoWithTitle } from "../BigDayLogoWithTitle";
+import { Avatar } from "../../ui";
 
 interface Props {
   onClickMenu: () => void;

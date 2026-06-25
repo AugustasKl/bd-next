@@ -1,7 +1,7 @@
 import { CloseIcon } from "@/icons";
 import { FC } from "react";
-import { NavItems } from "./sidebar/components";
 import clsx from "clsx";
+import { NavItems } from "../sidebar/components";
 
 interface Props {
   closeSideMenu: () => void;
