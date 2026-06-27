@@ -57,31 +57,11 @@
   /* colors */
   --color-banner-black: var(--color-banner-black);
   --color-banner-ash: var(--color-banner-ash);
-  --color-banner-midnight-blue: var(--color-banner-midnight-blue);
-  --color-banner-violet: var(--color-banner-violet);
-  --color-banner-royal-indigo: var(--color-banner-royal-indigo);
-  --color-banner-ocean-blue: var(--color-banner-ocean-blue);
-  --color-banner-teal-sky: var(--color-banner-teal-sky);
-  --color-banner-turquoise: var(--color-banner-turquoise);
-  --color-banner-aquamarine: var(--color-banner-aquamarine);
-  --color-banner-emerald-green: var(--color-banner-emerald-green);
-  --color-banner-meadow-green: var(--color-banner-meadow-green);
-  --color-banner-white: var(--color-banner-white);
-  --color-banner-ivory: var(--color-banner-ivory);
-  --color-banner-pale-sun: var(--color-banner-pale-sun);
-  --color-banner-dandelion: var(--color-banner-dandelion);
-  --color-banner-bronze: var(--color-banner-bronze);
-  --color-banner-firebrick-red: var(--color-banner-firebrick-red);
-  --color-banner-i-heart-red: var(--color-banner-i-heart-red);
-  --color-banner-christmas-red: var(--color-banner-christmas-red);
-  --color-banner-flame: var(--color-banner-flame);
-  --color-banner-peachy-pink: var(--color-banner-peachy-pink);
-  --color-banner-lavender: var(--color-banner-lavender);
-  --color-banner-flamingo-pink: var(--color-banner-flamingo-pink);
-  --color-banner-moss: var(--color-banner-moss);
-  --color-banner-halloween-orange: var(--color-banner-halloween-orange);
+  --color-gray-light: var(--color-gray-light);
+
 
   --color-divider: var(--color-divider);
+  --color-bg-main: var(--color-bg-main);
 
   --color-transparent: transparent;
   --color-current: currentColor;

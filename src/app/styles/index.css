@@ -10,13 +10,14 @@
     --color-text-gray-500: #6b7280;
     --color-text-gray-400: #9ca3af;
 
-
     /* custom colors */
     --color-divider: #e5e7eb;
-    /* --color-dimmed-: #e5e7eb; */
+    --color-bg-main: #f9fafb;
+
 
     --color-primary: #7c3aed;
     --color-primary-light: #ede9fe;
+    --color-gray-light: #6a7282;
 
     --font-weight-regular: 400;
     --font-weight-medium: 500;
@@ -33,7 +34,7 @@
 
   body {
     color: var(--color-neutral-black);
-    background-color: var(--color-neutral-white);
+    background-color: var(--color-bg-main);
     font-family: var(--font-inter), sans-serif;
   }
 
