@@ -3,7 +3,7 @@ import { Card, PageHeader } from "../components";
 import { Button } from "@/components";
 import PlusIcon from "./../../../../public/icons/plusIcon.svg";
 import { CARD_DATA } from "./_constants/CARD_DATA";
-import { EventsSection } from "./_components";
+import { EventsSection, QuickActions } from "./_components";
 
 const Dashboard: FC = () => {
   return (
@@ -19,7 +19,7 @@ const Dashboard: FC = () => {
           isIconFromLeft
         />
       </PageHeader>
-      <div className="flex flex-wrap gap-4 my-8">
+      <div className="flex flex-wrap justify-between gap-4 my-8">
         {CARD_DATA.map(
           ({ cardText, cardNumber, iconSrc, id, additionalInfo }) => (
             <Card
@@ -32,7 +32,10 @@ const Dashboard: FC = () => {
           ),
         )}
       </div>
-      <EventsSection />
+      <div className="flex flex-col desktop:flex-row gap-4">
+        <EventsSection />
+        <QuickActions />
+      </div>
     </div>
   );
 };
