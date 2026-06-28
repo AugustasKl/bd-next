@@ -59,7 +59,6 @@
   --color-banner-ash: var(--color-banner-ash);
   --color-gray-light: var(--color-gray-light);
 
-
   --color-divider: var(--color-divider);
   --color-bg-main: var(--color-bg-main);
 
@@ -105,6 +104,10 @@
   --text-card-label-mobile--line-height: 1rem;
   --text-card-label: 0.875rem;
   --text-card-label--line-height: 1.25rem;
+  --text-body-small: 0.75rem;
+  --text-body-small--line-height: 1rem;
+  --text-body-medium: 0.875rem;
+  --text-body-medium--line-height: 1.25rem;
   --text-body-mobile: 0.875rem;
   --text-body-mobile--line-height: 1.375rem;
   --text-body: 1rem;
@@ -290,8 +293,12 @@
   @apply text-subsection-heading-mobile tablet:text-subsection-heading font-family-headline font-medium;
 }
 
-@utility stats {
-  @apply text-stats-mobile tablet:text-stats font-family-body font-semibold;
+@utility body-small {
+  @apply text-body-small font-family-body font-medium;
+}
+
+@utility body-medium {
+  @apply text-body-medium font-family-body font-medium;
 }
 
 @utility card-label {

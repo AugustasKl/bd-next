@@ -16,10 +16,12 @@ interface ButtonProps {
   iconSrc?: string;
   titleClassName?: string;
   iconClassName?: string;
+  isIconFromLeft?: boolean;
 }
 
 type Props = ButtonProps & ComponentPropsWithoutRef<"button">;
 
+// TODO: add redirects to different pages
 export const Button: React.FC<Props> = ({
   title,
   color = "primary",
@@ -27,6 +29,7 @@ export const Button: React.FC<Props> = ({
   className,
   titleClassName,
   iconClassName,
+  isIconFromLeft,
   ...props
 }) => {
   const isIconUsed = Boolean(iconSrc);
@@ -41,7 +44,7 @@ export const Button: React.FC<Props> = ({
       {...props}
     >
       <div className="group inline-flex items-center gap-1">
-        {isIconUsed && (
+        {isIconUsed && isIconFromLeft && (
           <Image
             src={iconSrc!}
             alt={iconSrc!}
@@ -51,6 +54,15 @@ export const Button: React.FC<Props> = ({
           />
         )}
         <p className={titleClassName}>{title}</p>
+        {isIconUsed && !isIconFromLeft && (
+          <Image
+            src={iconSrc!}
+            alt={iconSrc!}
+            height={16}
+            width={16}
+            className={iconClassName}
+          />
+        )}
       </div>
     </button>
   );

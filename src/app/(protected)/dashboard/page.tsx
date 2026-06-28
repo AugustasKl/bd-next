@@ -3,11 +3,11 @@ import { Card, PageHeader } from "../components";
 import { Button } from "@/components";
 import PlusIcon from "./../../../../public/icons/plusIcon.svg";
 import { CARD_DATA } from "./_constants/CARD_DATA";
+import { EventsSection } from "./_components";
 
 const Dashboard: FC = () => {
   return (
-    //  NOTE: check all pages widths
-    <div className="flex flex-col max-w-[1140px] mx-auto">
+    <div className="flex flex-col">
       <PageHeader
         description="Welcome back! Here's what's happening with your events."
         headerTitle="Dashboard"
@@ -16,9 +16,10 @@ const Dashboard: FC = () => {
           className="rounded-m h-9 "
           title="Create Event"
           iconSrc={PlusIcon}
+          isIconFromLeft
         />
       </PageHeader>
-      <div className="flex flex-wrap gap-4 justify-between my-8">
+      <div className="flex flex-wrap gap-4 my-8">
         {CARD_DATA.map(
           ({ cardText, cardNumber, iconSrc, id, additionalInfo }) => (
             <Card
@@ -31,6 +32,7 @@ const Dashboard: FC = () => {
           ),
         )}
       </div>
+      <EventsSection />
     </div>
   );
 };
