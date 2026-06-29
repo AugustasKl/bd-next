@@ -1,6 +1,6 @@
 import { Button } from "@/components";
 import { FC } from "react";
-import ArrowRightIcon from "../../../../../../public/icons/arrowRightIcon.svg";
+import { ArrowRightIcon } from "@/icons";
 
 export const EventsHeader: FC = () => {
   return (
@@ -13,7 +13,7 @@ export const EventsHeader: FC = () => {
       </div>
       <Button
         color="secondary"
-        iconSrc={ArrowRightIcon}
+        icon={ArrowRightIcon}
         title="View all"
         className="rounded-m"
       />

@@ -1,6 +1,6 @@
 import clsx from "clsx";
-import Image from "next/image";
 import React, { ComponentPropsWithoutRef } from "react";
+import { IconProps } from "@/icons";
 
 type ButtonColor = "primary" | "secondary" | "danger";
 
@@ -13,7 +13,7 @@ const colorMap: Record<ButtonColor, string> = {
 interface ButtonProps {
   title: string;
   color?: ButtonColor;
-  iconSrc?: string;
+  icon?: React.ComponentType<IconProps>;
   titleClassName?: string;
   iconClassName?: string;
   isIconFromLeft?: boolean;
@@ -25,15 +25,13 @@ type Props = ButtonProps & ComponentPropsWithoutRef<"button">;
 export const Button: React.FC<Props> = ({
   title,
   color = "primary",
-  iconSrc,
+  icon: Icon,
   className,
   titleClassName,
   iconClassName,
   isIconFromLeft,
   ...props
 }) => {
-  const isIconUsed = Boolean(iconSrc);
-
   return (
     <button
       className={clsx(
@@ -44,24 +42,12 @@ export const Button: React.FC<Props> = ({
       {...props}
     >
       <div className="group inline-flex items-center gap-1">
-        {isIconUsed && isIconFromLeft && (
-          <Image
-            src={iconSrc!}
-            alt={iconSrc!}
-            height={16}
-            width={16}
-            className={iconClassName}
-          />
+        {Icon && isIconFromLeft && (
+          <Icon width={16} height={16} className={iconClassName} />
         )}
         <p className={titleClassName}>{title}</p>
-        {isIconUsed && !isIconFromLeft && (
-          <Image
-            src={iconSrc!}
-            alt={iconSrc!}
-            height={16}
-            width={16}
-            className={iconClassName}
-          />
+        {Icon && !isIconFromLeft && (
+          <Icon width={16} height={16} className={iconClassName} />
         )}
       </div>
     </button>

@@ -16,6 +16,7 @@ interface Props {
   onSingUp: () => void;
 }
 
+// TODO: fix up properly login form
 export const LoginForm: FC<Props> = ({ onSingUp }) => {
   const { register, handleSubmit } = useForm<FormInput>();
   const router = useRouter();
@@ -29,8 +30,6 @@ export const LoginForm: FC<Props> = ({ onSingUp }) => {
       redirect: false,
     });
 
-    // console.log(signInData)
-
     if (signInData?.ok) {
       router.push("/dashboard");
 
@@ -38,8 +37,6 @@ export const LoginForm: FC<Props> = ({ onSingUp }) => {
     } else {
       console.error("Sign in error:", signInData?.error);
     }
-
-    // console.log(signInData);
   };
 
   return (

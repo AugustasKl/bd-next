@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { PageHeader } from "../components";
 import { Button } from "@/components";
-import PlusIcon from "./../../../../public/icons/plusIcon.svg";
+import { PlusIcon } from "@/icons";
 
 const Events: FC = () => {
   return (
@@ -13,7 +13,7 @@ const Events: FC = () => {
         <Button
           className="rounded-m h-9 "
           title="Create Event"
-          iconSrc={PlusIcon}
+          icon={PlusIcon}
         />
       </PageHeader>
     </div>
