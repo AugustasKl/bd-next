@@ -16,7 +16,7 @@ export const ProtectedLayout: FC<Props> = ({ children, isMobileDevice }) => {
   return (
     <div className="flex flex-col min-h-screen tablet:flex-row ">
       {isTablet ? <Sidebar /> : <MobileNav />}
-      <main className="desktop:p-8 flex-1 w-full max-w-[21.4375rem] tablet:max-w-[71.25rem] mx-auto">
+      <main className="tablet:p-6 desktop:p-8 flex-1 w-full max-w-[21.4375rem] tablet:max-w-[71.25rem] mx-auto">
         {children}
       </main>
     </div>

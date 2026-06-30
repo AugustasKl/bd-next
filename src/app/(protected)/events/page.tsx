@@ -1,23 +1,14 @@
 import { FC } from "react";
-import { PageHeader } from "../components";
-import { Button } from "@/components";
-import { PlusIcon } from "@/icons";
+import { EventsHeader, EventsList } from "./_components";
 
-const Events: FC = () => {
-  return (
-    <div className="flex flex-col">
-      <PageHeader
-        description="Manage all your events in one place."
-        headerTitle="Events"
-      >
-        <Button
-          className="rounded-m h-9 "
-          title="Create Event"
-          icon={PlusIcon}
-        />
-      </PageHeader>
-    </div>
-  );
-};
+// NOTE: all pages are using server components but doesn't fetch anything (update accordingly)
+const Events: FC = () => (
+
+  
+  <div className="flex flex-col">
+    <EventsHeader />
+    <EventsList />
+  </div>
+);
 
 export default Events;
