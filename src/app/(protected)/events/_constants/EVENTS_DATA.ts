@@ -6,6 +6,7 @@ export interface EventData {
   eventDescription: string;
   eventDate: string;
   eventLocation: string;
+  eventColor: string;
   guestCount: number;
   formCount: number;
   status: EventStatus;
@@ -21,6 +22,7 @@ export const EVENTS_DATA: EventData[] = [
     eventLocation: "Sunset Gardens, Malibu, CA",
     guestCount: 150,
     formCount: 2,
+    eventColor: "red",
     status: "Upcoming",
   },
   {
@@ -31,6 +33,7 @@ export const EVENTS_DATA: EventData[] = [
     eventLocation: "The Rooftop Bar, Downtown LA",
     guestCount: 45,
     formCount: 1,
+    eventColor: "blue",
     status: "Past",
   },
   {
@@ -40,6 +43,7 @@ export const EVENTS_DATA: EventData[] = [
       "Annual family gathering with fun activities for all ages",
     eventDate: "July 4, 2026",
     eventLocation: "Lakeside Park, Portland, OR",
+    eventColor: "green",
     guestCount: 80,
     formCount: 1,
     status: "Upcoming",
@@ -50,6 +54,7 @@ export const EVENTS_DATA: EventData[] = [
     eventDescription: "Celebrating 10 years of success",
     eventDate: "March 10, 2026",
     eventLocation: "Grand Ballroom, Hilton Hotel",
+    eventColor: "yellow",
     guestCount: 200,
     formCount: 3,
     status: "Past",

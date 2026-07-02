@@ -46,8 +46,8 @@ export const EventsList: FC = () => {
         />
       </div>
       <ul className="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-4 mt-8">
-        {filteredEvents.map(({ id, ...event }) => (
-          <EventItem key={id} {...event} />
+        {filteredEvents.map(({ ...event }) => (
+          <EventItem key={event.id} {...event} />
         ))}
       </ul>
     </>

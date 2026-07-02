@@ -19,6 +19,12 @@
     --color-gray-light: #6a7282;
     --color-gray-light-300: #f3f3f5;
 
+    /* event colors */
+    --color-event-green: #65a30d;
+    --color-event-red: #c2410c;
+    --color-event-blue: #4338ca;
+    --color-event-yellow: #fde047;
+
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;

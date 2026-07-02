@@ -63,6 +63,11 @@
   --color-divider: var(--color-divider);
   --color-bg-main: var(--color-bg-main);
 
+  --color-event-green: var(--color-event-green);
+  --color-event-red: var(--color-event-red);
+  --color-event-blue: var(--color-event-blue);
+  --color-event-yellow: var(--color-event-yellow);
+
   --color-transparent: transparent;
   --color-current: currentColor;
   --color-neutral-black: var(--color-neutral-black);
